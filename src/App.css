@@ -1,0 +1,155 @@
+@import "leaflet/dist/leaflet.css"; 
+html, body {
+   margin: 0;
+          font-family: 'Segoe UI', sans-serif;
+          background: linear-gradient( #fff );
+          color: #333;
+          direction: ltr;
+ 
+}
+ .App {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #61dafb 40%, #21a1f3 100%);
+  padding: 16px;
+  box-shadow: 0 4px 24px rgba(97, 218, 251, 0.2);
+  animation: App-logo-bounce 2s infinite alternate;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear, App-logo-bounce 2s infinite alternate;
+  }
+}
+
+@keyframes App-logo-bounce {
+  0% { transform: scale(1) rotate(0deg);}
+  100% { transform: scale(1.07) rotate(10deg);}
+}
+.App-header {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  min-height: 100vh;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 0 32px 0;
+  font-size: calc(12px + 2vmin);
+  color: #fff;
+  width: 100vw;
+  max-width: 100vw;
+}
+.App-header:hover {
+  box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.45);
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+  margin-top: 16px;
+  margin-right: 0;
+  margin-left: auto;
+  display: inline-block;
+}
+.App-link:hover {
+  color: #21a1f3;
+  border-bottom: 2px solid #21a1f3;
+  text-shadow: 0 2px 8px #61dafb55;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #232526;
+}
+::-webkit-scrollbar-thumb {
+  background: #414345;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .App-header {
+    padding: 24px 8px 24px 8px;
+    font-size: 1em;
+    max-width: 98vw;
+    border-radius: 0;
+  }
+  .App-logo {
+    height: 80px;
+    padding: 8px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-navbar {
+  direction: rtl;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 2px 16px 0 rgba(31,38,135,0.10);
+  margin-bottom: 32px;
+  
+
+
+}
+
+.main-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.main-navbar a:hover {
+  background: #61dafb;
+  color: #232526;
+}
+
+.main-navbar button {
+  background: #21a1f3;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.main-navbar button:hover {
+  background: #61dafb;
+  color: #232526;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
